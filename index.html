@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านดอกไม้ของคุณ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ร้านดอกไม้ของคุณ</h1>
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="products.html">สินค้า</a>
+            <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>ยินดีต้อนรับสู่ร้านดอกไม้ของเรา</h2>
+            <p>เรามีดอกไม้หลากหลายสีสันสำหรับทุกโอกาสพิเศษ</p>
+            <div class="slider">
+                <div class="slider">
+                    <div class="slides">
+                      
+                        <div class="slide"><img src="Image/ทานตะวัน.jpg" alt="ดอกไม้ 1"></div>
+                        <div class="slide"><img src="Image/กุหลาบ.jpg" alt="ดอกไม้ 2"></div>
+                        <div class="slide"><img src="Image/ทิวลิป.jpg" alt="ดอกไม้ 3"></div>
+                        <div class="slide"><img src="Image/คาร์เนชั่น.jpg" alt="ดอกไม้ 4"></div>
+                        <div class="slide"><img src="Image/เดซี่.jpg" alt="ดอกไม้ 5"></div>
+                        <div class="slide"><img src="Image/ฟอร์เก็ทมีน็อท.jpg" alt="ดอกไม้ 6"></div>
+                        <div class="slide"><img src="Image/กล้วยไม้.jpg" alt="ดอกไม้ 7"></div>
+                        <div class="slide"><img src="Image/ลาเวนเดอร์.jpg" alt="ดอกไม้ 8"></div>
+                    </div>
+                  
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+            
+                <script>
+                    let slideIndex = 0;
+            
+                    function showSlide(n) {
+                        const slides = document.querySelectorAll(".slide");
+                        if (n >= slides.length) slideIndex = 0;
+                        if (n < 0) slideIndex = slides.length - 1;
+                        slides.forEach(slide => (slide.style.display = "none"));
+                        slides[slideIndex].style.display = "block";
+                    }
+            
+                    function moveSlide(n) {
+                        slideIndex += n;
+                        showSlide(slideIndex);
+                    }
+            
+                    function autoSlide() {
+                        slideIndex++;
+                        showSlide(slideIndex);
+                        setTimeout(autoSlide, 2000); // เปลี่ยนภาพทุก 3 วินาที
+                    }
+            
+                    
+                    showSlide(slideIndex);
+                    autoSlide();
+                </script>
+        </section>
+    </main>
+    <footer>
+        <p>ร้านดอกไม้ &copy; 2024 | Theerapan Rueanthong</p>
+    </footer>
+</body>
+</html>

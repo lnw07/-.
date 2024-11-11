@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #fff6f8; /* สีชมพูอ่อน */
+    color: #5a5a5a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ff8ba7; /* สีชมพูที่อ่อนลง */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Hero Section */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #ffe5eb; /* สีชมพูอ่อนมาก */
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff8ba7;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.main-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Product Section */
+.product-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.product {
+    text-align: center;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+}
+
+.product img {
+    width: 100%;
+    height: 200px; /* กำหนดความสูงให้เท่ากัน */
+    object-fit: cover; /* ให้ภาพตัดส่วนเกินและไม่บิดเบี้ยว */
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 0.5rem;
+    color: #ff8ba7;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #ff8ba7;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.slider img {
+    width: 300;
+    height: 300px; /* กำหนดความสูงให้เท่ากัน */
+    object-fit: cover; /* ให้ภาพตัดส่วนเกินและไม่บิดเบี้ยว */
+    border-radius: 10px;
+}
+
