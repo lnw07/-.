@@ -5,25 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower shop</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;
+1,200;1,300;1,400;1,500;1,600;1,700&family=Sriracha&display=swap" rel="stylesheet">
+<script>
+     tailwind.config = {
+            theme: {
+                extend:{
+                    fontFamily:{
+                           title:['Sriracha', 'serif'],
+                           content:['Mali']
+                        },
+                        colors:{
+                            Kangcolor:{
+                            1:'#B03052',
+                            2:'#F0C1E1',
+                            3:'#FDDBBB',
+                            4:'#FFF9BF',
+                        },
+                        }
+                    }
+                }
+            }
+</script>
 </head>
 <body>
+    <div class=" bg-Kangcolor-1">
     <header>
-        <h1>Flower shop</h1>
+        <div class="font-title text-4xl text-Kangcolor-4 bg-">Flower shop</div>
         <nav>
+            <div class="font-title text-4xl text-Kangcolor-4">
             <a href="index.html">หน้าแรก</a>
             <a href="products.html">สินค้า</a>
             <a href="contact.html">ติดต่อเรา</a>
+        </div>
         </nav>
+    </div>
     </header>
     <main>
         <section class="hero">
-            <h2>ยินดีต้อนรับสู่ร้านดอกไม้ของเรา</h2>
-            <p>เรามีดอกไม้หลากหลายสีสันสำหรับทุกโอกาสพิเศษ</p>
-            <div class="slider">
-                <div class="slider">
+            <div class="font-title text-4xl text-Kangcolor-1">ยินดีต้อนรับสู่ร้านดอกไม้ของเรา</div>
+            <div class="font-title text-2xl text-Kangcolor-1">เรามีดอกไม้หลากหลายสีสันสำหรับทุกโอกาสพิเศษ</div>
+            <div class="slider flex flex-row justify-center">
+                <div class="slider ">
                     <div class="slides">
                       
-                        <div class="slide"><img src="Image/ทานตะวัน.jpg" alt="ดอกไม้ 1"></div>
+                        <div class="slide "><img src="Image/ทานตะวัน.jpg" alt="ดอกไม้ 1"></div>
                         <div class="slide"><img src="Image/กุหลาบ.jpg" alt="ดอกไม้ 2"></div>
                         <div class="slide"><img src="Image/ทิวลิป.jpg" alt="ดอกไม้ 3"></div>
                         <div class="slide"><img src="Image/คาร์เนชั่น.jpg" alt="ดอกไม้ 4"></div>
@@ -66,7 +94,7 @@
         </section>
     </main>
     <footer>
-        <p>ร้านดอกไม้ &copy; 2024 | Theerapan Rueanthong</p>
+        <div class="font-title text-1xl text-Kangcolor-4">ร้านดอกไม้ &copy; 2024 | Theerapan Rueanthong</div>
     </footer>
 </body>
 </html>
